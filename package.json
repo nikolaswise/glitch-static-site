@@ -1,0 +1,20 @@
+{
+  "name": "glitch-static-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "sirv build",
+    "build": "static-site --template _layout.html --block content",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "static-site": "^1.3.4"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.5"
+  }
+}
